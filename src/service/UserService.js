@@ -46,7 +46,7 @@ export class UserService {
         }
     }
 
-    async deleteTbUrl(id) {
+    async deleteUser(id) {
         try {
             let res = await axios.delete(config.BACKEND_API_URL + `users/${id}`, { headers: authHeader() })
             let data = res.data;
